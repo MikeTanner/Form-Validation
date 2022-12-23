@@ -1,87 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <header id="pageHeader">Header</header>
-    <article id="mainArticle">
-      <div id="listContainer"></div>
-      <div id="formContainer">
-        <div class="addTaskContainer">
-          <button class="showButton formHide">New Task</button>
-          <form class="taskForm formHide form-style-9" id="userInput">
-            <ul>
-              <li>
-                <input
-                  type="text"
-                  id="inputTaskName"
-                  name="field1"
-                  class="field-style field-split align-left"
-                  placeholder="Task Name"
-                />
-              </li>
-              <li>
-                <input
-                  type="text"
-                  id="inputProject"
-                  name="field3"
-                  class="field-style field-split align-left"
-                  placeholder="Project?"
-                />
-              </li>
-              <li>
-                <input
-                  type="text"
-                  id="inputDueDate"
-                  name="field3"
-                  class="field-style field-full align-none"
-                  placeholder="Due Date MM/DD/YEAR"
-                />
-              </li>
-              <li>
-                <textarea
-                  name="field5"
-                  id="inputDescription"
-                  class="field-style"
-                  placeholder="Description"
-                ></textarea>
-              </li>
-              <li>
-                <input type="submit" value="Add Task" id="submitNewTask" />
-              </li>
-            </ul>
-          </form>
-          <!-- top section will be a form +button to add new book -->
-        </div>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- email country zip code password password confirmation -->
+  
+    <form novalidate>
+      <div class="title">Welcome</div>
+      <div class="subtitle">Let's create your account!</div>
+      <div class="input-container ic1">
+        <input id="email" class="input" type="email" placeholder=" " required/>
+        <label for="email" class="placeholder">Email</>
       </div>
-    </article>
+      <div class="error emailError" aria-live="polite"></div>
 
-    <nav id="mainNav">
-      <div id="allTasks">
-        <h3>All Tasks</h3>
-        <div class="navTaskDiv" id="tasks">
-          <img class="taskImg icon taskNav" src="" alt="Task Img" />
-          <p class="taskNav">Tasks</p>
-        </div>
-        <div class="navTaskDiv" id="starred">
-          <img class="starImg icon starNav" src="" alt="Star Img" />
-          <p class="starNav">Starred</p>
-        </div>
+      <div class="input-container ic2">
+        <input id="country" class="input" type="text" placeholder=" " />
+        <label for="country" class="placeholder">Country</>
       </div>
-      <div id="projects">
-        <h3>Projects</h3>
-        <div class="projectsDiv"></div>
-        <div class="addProject" id="addProject">
-          <img class="projectImg icon" src="" alt="Plus symbol" />
-          <p>Add Project</p>
-        </div>
+      <div class="error countryError" aria-live="polite"></div>
+
+      <div class="input-container ic2">
+        <input id="zipCode" class="input" type="text" placeholder=" " />
+        <label for="zipCode" class="placeholder">Zip Code</>
       </div>
-    </nav>
-    <div id="projectTree">projectTree</div>
-    <footer id="pageFooter">Footer</footer>
-  </body>
+      <div class="error zipCodeError" aria-live="polite"></div>
+
+      <div class="input-container ic2">
+        <input id="password" class="input" type="password" placeholder=" " />
+        <label for="password" class="placeholder">Password</>
+      </div>
+      <div class="error passwordError" aria-live="polite"></div>
+
+      <div class="input-container ic2">
+        <input id="passwordConfirm" class="input" type="password" placeholder=" " />
+        <label for="passwordConfirm" class="placeholder">Confirm Password</>
+      </div>
+      <div class="error confirmPasswordError" aria-live="polite"></div>
+
+
+
+      <button type="text" class="submit">submit</button>
+    </form>
+  
+</body>
 </html>
